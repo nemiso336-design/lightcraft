@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Craft - официальный сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0a1f1a, #1a3f2a);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: rgba(0,0,0,0.8);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #7ec850;
+        }
+        
+        .logo {
+            font-size: 48px;
+            color: #7ec850;
+            text-shadow: 0 0 20px #7ec850;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px;
+            margin: 30px 0;
+        }
+        
+        .hero h1 {
+            font-size: 56px;
+            color: #7ec850;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #7ec850;
+            color: black;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            background: #8ed860;
+        }
+        
+        .btn-telegram {
+            background: #0088cc;
+            color: white;
+        }
+        
+        .btn-telegram:hover {
+            background: #0099dd;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            background: rgba(30,30,30,0.8);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #7ec850;
+        }
+        
+        .feature h3 {
+            color: #7ec850;
+            margin: 15px 0;
+            font-size: 22px;
+        }
+        
+        .feature p {
+            color: #ddd;
+            font-size: 16px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.8);
+            margin-top: 50px;
+            border-top: 4px solid #7ec850;
+        }
+        
+        .footer p {
+            margin: 10px 0;
+            color: #aaa;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 36px;
+            }
+            
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .btn {
+                font-size: 18px;
+                padding: 12px 25px;
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">⚡ LIGHT CRAFT ⚡</div>
+    </div>
+    
+    <div class="container">
+        <div class="hero">
+            <h1>Клон Майнкрафта для Android</h1>
+            <p>Бесплатно • 3 режима • Джойстик • Житель</p>
+            <a href="https://t.me/lightcraff" class="btn btn-telegram" target="_blank">📱 Telegram канал</a>
+            <a href="#" class="btn" onclick="alert('APK файл скоро появится в Telegram канале! Подпишись 👆')">📥 Скачать APK</a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div style="font-size: 48px;">🆓</div>
+                <h3>Бесплатно</h3>
+                <p>Никаких донатов и подписок. Всё полностью бесплатно!</p>
+            </div>
+            <div class="feature">
+                <div style="font-size: 48px;">🎮</div>
+                <h3>3 режима</h3>
+                <p>Стройка / Ломка / Прогулка. Переключайся двойным тапом!</p>
+            </div>
+            <div class="feature">
+                <div style="font-size: 48px;">🕹️</div>
+                <h3>Джойстик</h3>
+                <p>Удобное управление как в настоящих мобильных играх</p>
+            </div>
+            <div class="feature">
+                <div style="font-size: 48px;">💎</div>
+                <h3>Алмазы</h3>
+                <p>Алмазная кирка в подарок при первом запуске!</p>
+            </div>
+        </div>
+        
+        <div style="background: rgba(0,0,0,0.5); border-radius: 15px; padding: 30px; margin: 40px 0; text-align: center;">
+            <h2 style="color: #7ec850; margin-bottom: 20px;">📥 Как скачать игру?</h2>
+            <p style="font-size: 18px; margin-bottom: 20px;">1. Нажми на кнопку "Telegram канал" выше<br>2. Подпишись на канал<br>3. В закреплённом сообщении найди APK файл<br>4. Скачай и установи</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2026 Light Craft. Неофициальный клон Майнкрафта</p>
+        <p>Сделано фанатами для фанатов</p>
+        <p style="font-size: 14px; color: #666;">Версия 1.0.0</p>
+    </div>
+</body>
+</html>
